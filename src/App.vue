@@ -1,5 +1,5 @@
 <template>
-  <div  class="min-h-full font-Poppins box-border">
+  <div class="min-h-full font-Poppins box-border">
     <Navigation />
     <router-view />
   </div>
@@ -14,7 +14,7 @@
   const appReady = ref(null);
 
   // 检查用户是否已经登入
-   const user1 = supabase.auth.getUser();
+  const user1 = supabase.auth.getUser();
 
   // 如果用户不存在
   if (!user1) {
@@ -29,6 +29,7 @@
     ustore.setUser(session);
     appReady.value = true;
   });
+
 
 
 
