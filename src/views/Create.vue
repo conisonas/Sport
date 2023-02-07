@@ -74,8 +74,8 @@
               </label>
               <select id="cardio-type" class="p-2 w-full text-gray-500 focus:outline-none" v-model="item.cardioType">
                 <option value="#">选择类型</option>
-                <option value="run">跑步</option>
-                <option value="walk">散步</option>
+                <option value="跑步">跑步</option>
+                <option value="散步">散步</option>
               </select>
             </div>
             <div class="flex flex-col flex-1">
@@ -84,12 +84,12 @@
               <input required type="text" class="p-2 w-full text-gray-500 focus:outline-none" v-model="item.distance" />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="duration" class="mb-1 text-sm text-at-light-green">路程
+              <label for="duration" class="mb-1 text-sm text-at-light-green">时间
               </label>
               <input required type="text" class="p-2 w-full text-gray-500 focus:outline-none" v-model="item.duration" />
             </div>
             <div class="flex flex-col flex-1">
-              <label for="pace" class="mb-1 text-sm text-at-light-green">Pace </label>
+              <label for="pace" class="mb-1 text-sm text-at-light-green">步速 </label>
               <input required type="text" class="p-2 w-full text-gray-500 focus:outline-none" v-model="item.pace" />
             </div>
             <img @click="deleteExercise(item.id)" src="@/assets/images/trash-light-green.png"

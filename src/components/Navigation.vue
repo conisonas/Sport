@@ -23,9 +23,9 @@
   import { useRouter } from "vue-router";
 
   // 获取用户
-
+  const ustore = useUserStore();
   const user1 = computed(() => ustore.user);
-  const ustore = useUserStore(); 
+
   const {
     user
   } = storeToRefs(ustore);
